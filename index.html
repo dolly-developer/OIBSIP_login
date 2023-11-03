@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="main">
+      <header><h1>Login | Register</h1></header>
+
+      <form action="" id="regform">
+        <label for="username"> Enter Name</label>
+
+        <input
+          type="text"
+          name="username"
+          id="username"
+          placeholder="Full Name"
+        />
+        <br />
+        <label for="email"> Enter Email</label>
+
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="abc@mail.com"
+          required
+        />
+        <br />
+        <label for="pwd">N-Password</label>
+
+        <input
+          type="password"
+          id="pwd"
+          placeholder="Create password"
+          title="min 8 char inclused small and caps alphabates"
+          pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+          required
+        />
+        <br />
+        <input type="submit" class="submit" name="submit" value="SignUp" />
+      </form>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
